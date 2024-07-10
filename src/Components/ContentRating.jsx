@@ -42,11 +42,11 @@ class ContentRating extends Component {
                 ---Add text here---
                 </p>
             <div className='rating-buttons'>
-                <button className="like-button">
-                Like ({this.state.likes})
+                <button className="like-button" onClick={this.state.handleLike}>
+                    Like ({this.state.likes})
                 </button>
-                <button className="dislike-button">
-                Dislike ({this.state.dislikes})
+                <button className="dislike-button" onClick={this.state.handleDislike}>
+                    Dislike ({this.state.dislikes})
                 </button>
             </div>
         </div>
