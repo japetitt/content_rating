@@ -8,7 +8,30 @@ class ContentRating extends Component {
     this.state = {
 
         likes: 0,
-        dislikes: 0
+        dislikes: 0,
+    
+        handleLike:() => {
+
+            this.setState((prevState) =>  ({
+
+                likes: prevState.likes +1
+
+            }));
+
+        },
+        
+        handleDislike:() => {
+            this.setState((prevState) => ({
+
+
+                dislikes: prevState.dislikes + 1
+
+
+            }));
+
+         
+
+        }
     }
   }
   render() {    
